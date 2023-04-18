@@ -37,19 +37,21 @@ function Input(props) {
     }
   }
 
-  return (<div>
-    <div>
-    {Evidences.map((item, index) => (
-      <div key={index}>
-        <input type="checkbox" onChange={handleCheck} value={item} /> 
-        <span>{item}</span>
-      </div>))}
+  return (<div className="container">
+    <div className="row">
+      <div className="col">
+        {Evidences.map((item, index) => (
+          <div key={index}>
+            <input  type="checkbox" className="evidenceCheck" onChange={handleCheck} value={item} /> 
+            <span>{item}</span>
+          </div>))}
       </div>
-        <div>
+        <div className="col">
           <div>
             {ghosts.map(createName)}
           </div>
         </div>
+      </div>
       </div>);
 }
 

@@ -8,7 +8,8 @@ function Home() {
 
     return (
         <div>
-            <div id="evidences">
+            <h1 className="text-center">Ghosts</h1>
+            <div id="main_box">
                 <form action="post">
                     <Input type="checkbox"/>
                 </form>
